@@ -40,7 +40,7 @@ public func ramUsage() -> Float {
     return Float(vmInfo.phys_footprint) / Float(ProcessInfo.processInfo.physicalMemory)
 }
  
-func cpuUsage() -> Float {
+public func cpuUsage() -> Float {
     var totalUsage: Float = 0.0
     var threadsArray: thread_act_array_t?
     var threadsCount = mach_msg_type_number_t(0)

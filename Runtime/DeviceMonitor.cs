@@ -1,39 +1,32 @@
-using System.IO;
-using UnityEngine;
-using UnityEngine.Events;
-
-namespace games.javier.upm.monitoring
+namespace JG.UPM.Monitoring
 {
-	public class DeviceMonitor : MonoBehaviour
+	public static class DeviceMonitor
 	{
-		[SerializeField]
-		private UnityEvent<string> onStop;
-		private ITracker Tracker { get; set; }
-
-		private void Awake()
+		public static float GetCpuUsage()
 		{
 #if PLATFORM_IOS && !UNITY_EDITOR
-			Tracker = new ios.TrackerAdapter(Application.targetFrameRate);
+			return IOS.PerformanceCalculatorAdapter.GetCpuUsage();
 #else
-			Tracker = new DefaultTracker();
+			return 0;
 #endif
 		}
 
-		public void StartTracking()
+		public static float GetRamUsage()
 		{
-			Tracker.Start();
+#if PLATFORM_IOS && !UNITY_EDITOR
+			return IOS.PerformanceCalculatorAdapter.GetRamUsage();
+#else
+			return 0;
+#endif
 		}
 
-		public void StopTracking()
+		public static float GetGpuUsage()
 		{
-			var path = Tracker.Stop();
-			if (string.IsNullOrEmpty(path)) { return; }
-			onStop.Invoke(File.ReadAllText(path));
-		}
-
-		private void OnDestroy()
-		{
-			Tracker.Flush();
+#if PLATFORM_IOS && !UNITY_EDITOR
+			return IOS.PerformanceCalculatorAdapter.GetGpuUsage();
+#else
+			return 0;
+#endif
 		}
 	}
 }
