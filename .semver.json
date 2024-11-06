@@ -1,0 +1,90 @@
+{
+  "tagFormat": "${version}",
+  "branches": [
+    "main",
+    {
+      "name": "develop",
+      "prerelease": "dev"
+    },
+    {
+      "name": "release/*",
+      "prerelease": "rc"
+    },
+    {
+      "name": "hotfix/*",
+      "prerelease": "rc"
+    },
+    {
+      "name": "feature/*",
+      "prerelease": "feat"
+    }
+  ],
+  "plugins": [
+    [
+      "@semantic-release/commit-analyzer",
+      {
+        "releaseRules": [
+          {
+            "type": "Added",
+            "release": "minor"
+          },
+          {
+            "type": "Changed",
+            "release": "patch"
+          },
+          {
+            "type": "Updated",
+            "release": "patch"
+          },
+          {
+            "type": "Fixed",
+            "release": "patch"
+          },
+          {
+            "type": "Removed",
+            "release": "minor"
+          }
+        ]
+      }
+    ],
+    [
+      "@semantic-release/release-notes-generator",
+      {
+        "preset": "conventionalcommits",
+        "presetConfig": {
+          "types": [
+            {"type": "Added", "section": ":sparkles: Added", "hidden": false},
+            {"type": "Changed", "section": ":hammer: Changed", "hidden": false},
+            {"type": "Updated", "section": ":tools: Changed", "hidden": false},
+            {"type": "Fixed", "section": ":wrench: Fixed", "hidden": false},
+            {"type": "Removed", "section": ":skull: Deprecated", "hidden": false},
+            {"type": "Doc", "hidden": true},
+            {"type": "Docs", "hidden": true},
+            {"type": "CI", "hidden": true}
+          ]
+        }
+      }
+    ],
+    [
+      "@semantic-release/exec",
+      {
+        "prepareCmd": "./.github/set-version.sh ${nextRelease.version}"
+      }
+    ],
+    [
+      "@semantic-release/changelog",
+      {
+        "changelogFile": "CHANGELOG.md"
+      }
+    ],
+    [
+      "@semantic-release/git",
+      {
+        "assets": [
+          "CHANGELOG.md",
+          "package.json"
+        ]
+      }
+    ]
+  ]
+}
