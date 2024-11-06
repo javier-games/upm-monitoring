@@ -1,7 +1,9 @@
-# Monitoring for Unity
+[![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&logoColor=fff)](https://github.com/javier-games/upm-monitoring)
+[![Itch.io](https://img.shields.io/badge/itch.io-FA5C5C?logo=Itch.io&logoColor=fff)](https://javier-games.itch.io/upm-monitoring)
+[![npm](https://img.shields.io/badge/npm-CB3837?logo=npm&logoColor=fff)](https://www.npmjs.com/package/games.javier.upm.monitoring)
+[![OpenUPM](https://img.shields.io/badge/OpenUPM-3A6CE2.svg?logo=data:image/svg%2bxml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iVVRGLTgiIHN0YW5kYWxvbmU9Im5vIj8+CjwhRE9DVFlQRSBzdmcgUFVCTElDICItLy9XM0MvL0RURCBTVkcgMS4xLy9FTiIgImh0dHA6Ly93d3cudzMub3JnL0dyYXBoaWNzL1NWRy8xLjEvRFREL3N2ZzExLmR0ZCI+Cjxzdmcgd2lkdGg9IjEwMCUiIGhlaWdodD0iMTAwJSIgdmlld0JveD0iMCAwIDI1NiAyNTYiIHZlcnNpb249IjEuMSIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgeG1sbnM6c2VyaWY9Imh0dHA6Ly93d3cuc2VyaWYuY29tLyIgc3R5bGU9ImZpbGwtcnVsZTpldmVub2RkO2NsaXAtcnVsZTpldmVub2RkO3N0cm9rZS1saW5lam9pbjpyb3VuZDtzdHJva2UtbWl0ZXJsaW1pdDoyOyI+CiAgICA8ZyB0cmFuc2Zvcm09Im1hdHJpeCgxLDAsMCwxLDExNiw4KSI+CiAgICAgICAgPHBhdGggZD0iTS0yNi4wMjQsNjMuNzFDLTI1LjY3NSw2MS4zNTMgLTI1LjI3OSw1OS43MTUgLTI0LjgzMiw1OS4xMjNDLTIzLjMxOCw1Ni4xOTQgLTIzLjMxOCw1Ni4xOTQgLTIyLjE3Niw1My4wMjdDLTIwLjA0Myw0Ny41MzUgLTE2LjExMiw0My4yMDYgLTEyLjA3LDM4Ljk4NEwtMTAuMTg4LDM3TC04LjQ4LDM1LjMxM0MtNC4yMTcsMjguNjUyIC00LjQ0OCwxOS40MzEgLTMuODc3LDExLjc1NEMtMy40Niw3LjA5NCAtMi44ODMsMy44NjUgMCwwQzUuNjA4LDAuMTE0IDguMTg2LDEuNDIzIDEyLjA0Nyw1LjQyNkMxMy42ODYsNy41ODYgMTQuODQ0LDkuNTI4IDE2LjA3OCwxMS45MThDMjAuMjIxLDE5Ljg4OCAyMC4yMjEsMTkuODg4IDI3LjMyOSwyNC44NzZDMzEuMDQ5LDI1LjYxMiAzNC43MjUsMjUuODg4IDM4LjUwNywyNi4xMUM0Ni45OTUsMjYuNjQyIDU0LjI3MywyOC43MTMgNjIuMjUsMzEuNjI1TDY1LjY1OCwzMi44NjdDNjcuNjU1LDMzLjYwNSA2OS42NDgsMzQuMzUxIDcxLjYzOCwzNS4xMDhDNzMuNDExLDM1Ljc3OCA3NS4yMDIsMzYuNDAxIDc3LDM3Qzc5LjE0NiwzNS41MyA3OS4xNDYsMzUuNTMgODEuMzc1LDMzLjQzOEM4OS42MzUsMjYuNTk2IDk4LjA1OSwyMi4xNzIgMTA4Ljk1MywyMi42OTFDMTExLDIzIDExMSwyMyAxMTIsMjRDMTEzLjMzNSwzNC4zMTYgMTA5LjU3MSw0My4xMjMgMTA2LjAyMyw1Mi42MTdDMTAzLjU5OCw1OS41NDQgMTAyLjQ4Nyw2NC40NTMgMTA0LjM5Niw3MS42MjhDMTA1LjI5MSw3NS4xNDIgMTA1LjEzNiw3OC4zOTMgMTA1LDgyQzEwNS4yMDMsODIuMDI5IDEwNS4zNCw4Mi4yODQgMTA1LjM5NCw4Mi43MzdMMTI5LDkwTDEyOSwyMDRMMTAsMjQxTC0xMDEsMjA1TC0xMDEsOTBMLTI2LjAyNCw2My43MVpNNjguMTI1LDY2LjQzOEM2NS42OTQsNjguOTEyIDY1LjY5NCw2OC45MTIgNjUuNSw3Mi41NjNDNjUuNzc1LDc1Ljg1NyA2NS43NzUsNzUuODU3IDY3LjA2Myw3Ny45MzhDNzAuMTIsNzkuNjE0IDcyLjU5MSw3OS4zNjUgNzYsNzlDNzguMTUzLDc3LjU2NSA3OC43OTMsNzYuNDQ0IDc5Ljg3NSw3NC4xMjVDODAuMDY1LDcwLjg5NSA3OS4wMjEsNjkuNDc3IDc3LDY3QzczLjI5MSw2NC45ODQgNzEuOTUyLDY0LjUyNCA2OC4xMjUsNjYuNDM4Wk0tMjgsNzBDLTMxLjM5MSw3MC43ODQgLTM0LjcxLDcyLjI2MSAtMzgsNzRDLTM1LjI0OCw3NS4xMTEgLTMyLjM2Miw3NS45ODEgLTI5LDc2Qy0yOS4xODksNzMuOSAtMjguNzMzLDcxLjkyMyAtMjgsNzBaTS05Niw5N0wtOTYsMjAxTDcsMjM0TDcsMTI5LjY3TC05Niw5N1pNMTMsMTI5LjY3TDEzLDIzNEwxMjQsMjAwTDEyNCw5NkwxMywxMjkuNjdaTS04OSw5MkwxMCwxMjRMNTgsMTA3TC00Myw3OEwtODksOTJaTTEwNSw5NkwxMTgsOTJMMTA1LDg4TDEwNSw5NlpNMy42MjUsNTAuNjI1QzEuODAxLDUyLjk0OCAxLjgwMSw1Mi45NDggMS40MzgsNTZDMS43NjUsNTkuMTQ2IDEuNzY1LDU5LjE0NiA0LjEyNSw2MS40MzhDNi45MTIsNjMuMjQ5IDYuOTEyLDYzLjI0OSAxMC4xMjUsNjNDMTMuMDIyLDYyLjE5MyAxMy4wMjIsNjIuMTkzIDE0LjkzOCw2MC4zMTNDMTYuNDAxLDU3LjEyNyAxNS45ODksNTUuMzIxIDE1LDUyQzEzLjkzNyw1MC4wMiAxMy45MzcsNTAuMDIgMTIsNDlDOC4zNyw0OC40NTkgNi42NzgsNDguNTM2IDMuNjI1LDUwLjYyNVoiIHN0eWxlPSJmaWxsOndoaXRlOyIvPgogICAgPC9nPgo8L3N2Zz4=)](https://openupm.com/packages/games.javier.upm.monitoring)
 
-[![Asset Store](https://img.shields.io/badge/npm-available-blue.svg?logo=npm)](https://www.npmjs.com/package/games.javier.upm.monitoring)
-[![Donate](https://img.shields.io/badge/support-available-blue.svg?logo=paypal)](https://www.paypal.com/donate/?hosted_button_id=QY4PCGA8FMCC4)
+# Monitoring for Unity
 
 Monitoring for Unity is the package made for the Unity's package manager to monitoring the device's performance.
 
@@ -16,70 +18,29 @@ Monitoring for Unity is the package made for the Unity's package manager to moni
 
 ## Installation
 
-There are several methods available to install Monitoring for Unity into your project. Choose the one that best suits your needs. It's recommended to install via npm if you wish to keep the package up-to-date easily, as future releases and updates will be readily available.
+There are several methods available to install PropertyRefs into your Unity project. Choose the one that best suits your needs. It's recommended to install via npm if you wish to keep the package up-to-date easily, as future releases and updates will be readily available.
 
-### Installation via npm
-
-To add Monitoring for Unity from a npm registry in Unity, follow the steps below:
-
-1. Open your Unity project and navigate to `Edit > Project Settings > Package Manager`.
-2. In the `Scoped Registries` section, click on the `+` button to add a new scoped registry.
-3. Fill in the required fields:
-    - Name: Enter `JavierGames`.
-    - URL: Enter `https://registry.npmjs.org`.
-    - Scope(s): Enter `games.javier.upm.monitoring`.
-4. Click `Save` and close the Project Settings window.
-5. Navigate to `Window > Package Manager`.
-6. In the package manager window, select `Packages: My Registries`.
-7. You should see the `games.javier.upm.monitoring` package listed there. Click `Install` to install the package.
-
-Alternatively, you can directly modify your `Packages/manifest.json` file to add the new scoped registry and the dependency:
-
-1. Add the following scope to the `scopedRegistries` in your `manifest.json` file:
-```json
-{
-  "scopedRegistries": [
-    {
-      "name": "JavierGames",
-      "url": "https://registry.npmjs.org",
-      "scopes": ["games.javier.upm.monitoring"]
-    }
-  ]
-}
-```
-2.	Then, add `games.javier.upm.monitoring` to the dependencies section of your `manifest.json` file:
-```json
-{
-  "dependencies": {
-    "games.javier.upm.monitoring": "0.0.0"
-  }
-}
-```
-Ensure to replace 0.0.0 with the version number of the Monitoring for Unity package you intend to install. Save your manifest.json file after making these changes.
-
-### Installation via Cloning
-
-To install Monitoring for Unity by cloning the repository and adding the package from disk, follow these steps:
-
-1. Clone this repository to your local machine.
-```shell
-git clone https://github.com/javier-games/monitoring-for-unity.git
-```
-2. Open your Unity project and navigate to `Window > Package Manager`.
-3. In the Package Manager window, click on the `+` icon in the top-left corner.
-4. From the dropdown, select `Add package from disk...`.
-5. A file explorer window will open. Navigate to the location where you cloned the repository.
-6. Find and select the `package.json` file within the cloned repository and click `Open`.
-
-Unity will automatically detect and install the package. The package should now be listed in the Package Manager.
-
-### Install Specific Versions
-
-Alternatively if you only need a specific version of the project you can select the `Add package from git URL...` and introduce the url of this repository.
-```
-https://github.com/javier-games/monitoring-for-unity
-```
-Also you can download the tarball file (`games.javier.upm.monitoring-{version}.tgz`) from the [releases section](https://github.com/javier-games/monitoring-for-unity/releases) of this repository and add it throw the `Add package from tarball...` option.
+- **Package Name:**
+    ```
+    games.javier.upm.monitoring
+    ```
+- **Display Package Name:**
+    ```
+    Javier Games
+    ```
+- **NPM Registry URL:**
+    ```
+    https://registry.npmjs.org
+    ```
+- **Scope(s):**
+    ```
+    games.javier
+    ```
+- **OpenUPM CI command**
+    ```
+    openupm add games.javier.upm.monitoring
+    ```
+This package is being distributed on [npm](https://www.npmjs.com/package/games.javier.upm.monitoring), [OpenUPM](https://openupm.com/packages/games.javier.upm.monitoring) or a downloadable Tarball from the [Releases section](https://github.com/javier-games/upm-monitoring/releases) of this repository or from the dedicated [itch.io page](https://javier-games.itch.io/upm-monitoring). For detailed installation instructions, please refer to the guide on our [installation documentation page](https://installation.upm.javier.games).
 
 ## Usage
 
