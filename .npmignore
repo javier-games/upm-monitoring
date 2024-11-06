@@ -1,0 +1,16 @@
+# CI
+
+.semver.json
+.version
+.github
+
+# Documentation
+
+CODE_OF_CONDUCT.md
+CODE_OF_CONDUCT.md.meta
+CONTRIBUTING.md
+CONTRIBUTING.md.meta
+
+# Source Code
+
+Plugins/iOS/XcodeProject~
