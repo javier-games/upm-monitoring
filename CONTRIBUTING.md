@@ -1,16 +1,16 @@
 # Contributing to Monitoring for Unity
 
-First off, thank you for considering contributing to Monitoring for Unity. It's people like you that make Monitoring for Unity such a great tool. We welcome all types of contributions, from bug reports to feature suggestions to code improvements.
+First off, thank you for considering contributing to Monitoring for Unity. We welcome all types of contributions, from bug reports to feature suggestions to code improvements.
 
 Here are some ways you can contribute:
 
 ## Reporting Bugs
 
-If you come across a bug in Monitoring for Unity, we'd appreciate it if you could [create an issue](https://github.com/javier-games/monitoring-for-unity/issues/new) on our GitHub repository. Please include as many details as possible, so we can replicate and fix the issue.
+If you come across a bug in Monitoring for Unity, we'd appreciate it if you could [create an issue](https://github.com/javier-games/upm-monitoring/issues/new) on our GitHub repository. Please include as many details as possible, so we can replicate and fix the issue.
 
 ## Suggesting Enhancements
 
-We love to hear about new ways we can improve Monitoring for Unity. If you have an idea for a new feature, or if there's an existing feature that you think could be improved, please [create an issue](https://github.com/javier-games/monitoring-for-unity/issues/new) on our GitHub repository describing your idea.
+We love to hear about new ways we can improve Monitoring for Unity. If you have an idea for a new feature, or if there's an existing feature that you think could be improved, please [create an issue](https://github.com/javier-games/upm-monitoring/issues/new) on our GitHub repository describing your idea.
 
 ## Pull Requests
 
