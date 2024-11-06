@@ -1,4 +1,4 @@
-namespace games.javier.upm.monitoring
+namespace JG.UPM.Monitoring
 {
     public class DefaultTracker : ITracker
     {

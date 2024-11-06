@@ -2,7 +2,7 @@ using System.IO;
 using UnityEngine;
 using UnityEngine.Events;
 
-namespace games.javier.upm.monitoring
+namespace JG.UPM.Monitoring
 {
 	public class DeviceMonitor : MonoBehaviour
 	{

@@ -1,7 +1,7 @@
 #if UNITY_IOS
 using System.Runtime.InteropServices;
 
-namespace games.javier.upm.monitoring.ios
+namespace JG.UPM.Monitoring.IOS
 {
 	public class TrackerAdapter : ITracker
 	{
