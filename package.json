@@ -15,14 +15,19 @@
     "email": "support@javier.games",
     "url": "https://javier.games"
   },
-  "documentationUrl": "https://github.com/javier-games/monitoring-for-unity",
+  "documentationUrl": "https://github.com/javier-games/upm-monitoring",
   "license": "MIT",
-  "licensesUrl": "https://github.com/javier-games/monitoring-for-unity/blob/main/LICENSE",
+  "licensesUrl": "https://github.com/javier-games/upm-monitoring/blob/main/LICENSE",
   "samples": [
     {
-      "displayName": "General Usage",
-      "description": "Simple sample of how to use the monitoring.",
-      "path": "Samples~/Usage"
+      "displayName": "Scripting Sample",
+      "description": "Simple sample of how to use the monitoring via scripting.",
+      "path": "Samples~/Scripting"
+    },
+    {
+      "displayName": "Tracking Usage",
+      "description": "Simple sample of how to use the monitoring with the tracker.",
+      "path": "Samples~/Tracker"
     }
   ]
 }
