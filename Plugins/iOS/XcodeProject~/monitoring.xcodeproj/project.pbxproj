@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		F4014C2F2CDB4EBE00A202E1 /* PerformanceCalculatorAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerformanceCalculatorAdapter.swift; path = ../PerformanceCalculatorAdapter.swift; sourceTree = "<group>"; };
 		F42B44312BB18E8F00237BA1 /* PerformanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = PerformanceCalculator.swift; path = ../PerformanceCalculator.swift; sourceTree = "<group>"; };
 		F42B44322BB18E8F00237BA1 /* Tracker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Tracker.swift; path = ../Tracker.swift; sourceTree = "<group>"; };
 		F42B44332BB18E8F00237BA1 /* TrackerAdapter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = TrackerAdapter.swift; path = ../TrackerAdapter.swift; sourceTree = "<group>"; };
@@ -28,6 +29,7 @@
 		F4BD19562BB1158400E579B8 = {
 			isa = PBXGroup;
 			children = (
+				F4014C2F2CDB4EBE00A202E1 /* PerformanceCalculatorAdapter.swift */,
 				F42B44312BB18E8F00237BA1 /* PerformanceCalculator.swift */,
 				F42B44322BB18E8F00237BA1 /* Tracker.swift */,
 				F42B44332BB18E8F00237BA1 /* TrackerAdapter.swift */,

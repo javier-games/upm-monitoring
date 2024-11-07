@@ -1,6 +1,6 @@
 {
   "name": "games.javier.upm.monitoring",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "displayName": "Monitoring for Unity",
   "description": "This package contains tools for monitoring.",
   "unity": "2022.3",
@@ -12,17 +12,21 @@
   ],
   "author": {
     "name": "Javier García",
-    "email": "support@javier.games",
-    "url": "https://javier.games"
+    "url": "https://javier-games.itch.io/upm-monitoring"
   },
-  "documentationUrl": "https://github.com/javier-games/monitoring-for-unity",
+  "documentationUrl": "https://github.com/javier-games/upm-monitoring",
   "license": "MIT",
-  "licensesUrl": "https://github.com/javier-games/monitoring-for-unity/blob/main/LICENSE",
+  "licensesUrl": "https://github.com/javier-games/upm-monitoring/blob/main/LICENSE",
   "samples": [
     {
-      "displayName": "General Usage",
-      "description": "Simple sample of how to use the monitoring.",
-      "path": "Samples~/Usage"
+      "displayName": "Scripting Sample",
+      "description": "Simple sample of how to use the monitoring via scripting.",
+      "path": "Samples~/Scripting"
+    },
+    {
+      "displayName": "Tracking Usage",
+      "description": "Simple sample of how to use the monitoring with the tracker.",
+      "path": "Samples~/Tracker"
     }
   ]
 }
