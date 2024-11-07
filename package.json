@@ -1,6 +1,6 @@
 {
   "name": "games.javier.upm.monitoring",
-  "version": "0.0.0",
+  "version": "1.0.0",
   "displayName": "Monitoring for Unity",
   "description": "This package contains tools for monitoring.",
   "unity": "2022.3",
