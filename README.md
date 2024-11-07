@@ -46,10 +46,6 @@ This package is being distributed on [npm](https://www.npmjs.com/package/games.j
 
 Monitoring for Unity is designed with an intuitive interface to ensure a seamless and user-friendly experience. To use Monitoring for Unity in your projects, use the DeviceMonitor component methods to start and stop the tracking process. You can find a usage sample at the Unity Package Manage section of the package.
 
-## License
-
-Monitoring for Unity is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
-
 ## Contribution
 
 Please read our [Contributing Guide](Documentation~/CONTRIBUTING.md) before submitting a Pull Request to the project.
@@ -58,6 +54,6 @@ Please read our [Contributing Guide](Documentation~/CONTRIBUTING.md) before subm
 
 For any questions or issues, please open a [new issue](https://github.com/javier-games/monitoring-for-unity/issues/new) on this repository.
 
-## Donations
+## License
 
-Monitoring for Unity is a open source project, and it's because of your support that we can stay up and running. If you find this project useful, please consider [making a donation](https://www.paypal.com/donate/?hosted_button_id=QY4PCGA8FMCC4). Your contribution will help us to maintain the project, and continue to develop new features. We appreciate your generosity!
+Monitoring for Unity is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
